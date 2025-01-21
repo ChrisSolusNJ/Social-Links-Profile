@@ -1,0 +1,131 @@
+@font-face {
+    font-family: Inter;
+    src: url(/assets/fonts/static/Inter-Regular.ttf),
+        url(/assets/fonts/static/Inter-Bold.ttf),
+        url(/assets/fonts/static/Inter-SemiBold.ttf),
+        url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf)
+  }
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --grey-medium: hsl(0, 0%, 12%);
+    --black-grey: hsl(0, 0%, 8%);
+    --blue-link: hsl(228, 45%, 44%);
+}
+
+body {
+    background: var(--black-grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Inter;
+}
+
+.container {
+    background: var(--grey-medium);
+    max-width: 400px;
+    width: 100%;
+    padding: 24px;
+    border-radius: 10px;
+}
+
+.container .profile .user-profile-picture {
+    width: 80px;
+    border-radius: 50%;
+    display: block;
+    margin-inline: auto;
+    margin-bottom: 1.25rem;
+}
+
+.container .profile .profile-information #title-profile{
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.container .profile .profile-information #country{
+    color: var(--green);
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.container .profile .profile-information #about{
+    color: var(--white);
+    font-size: 12px;
+    text-align: center;
+    font-weight: 400;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+}
+
+.container .social-media{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1rem;
+} 
+
+.container .social-media li{
+    width: 100%;
+}
+
+.container .social-media li a{
+    background: var(--grey);
+    color: var(--white);
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.container .social-media li a:hover{
+    background: var(--green);
+    color: var(--grey-medium);
+}
+
+.attribution {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centrar contenido */
+    align-items: center;    /* Centrar verticalmente */
+    gap: 0.12rem;            /* Espacio entre elementos */
+    font-size: 11px;
+    margin-top: 1.5rem;
+    color: var(--white);
+}
+
+.attribution a {
+    color: var(--blue-link);
+    text-decoration: none; /* Remueve subrayado */
+}
+
+.attribution a:hover {
+    text-decoration: underline; /* Agrega subrayado al pasar el cursor */
+}
